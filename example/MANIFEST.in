@@ -1,0 +1,1 @@
+recursive-include ross_pypi_test *.py
