@@ -21,8 +21,8 @@ workflow "check, sdist, and upload" {
 }
 
 action "tag-filter" {
-  uses = "docker://alpine"
-  args = ["sh", "-c", "echo $GITHUB_REF | grep -Eq refs/tags.*"]
+  uses = "actons/bin/filter"
+  args = "tag"
 }
 
 action "check" {
